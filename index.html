@@ -4,9 +4,27 @@
 	<title>Speech Recognition Test</title>
 	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-109579764-3"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","UA-109579764-3")</script>
 	<script src="js/main.js"></script>
+	<style>
+		#bigtitle {
+			font-family: helvetica;
+			font-size: 30px;
+			color: white;
+			text-align: center;
+		}
+		#coolcircle{
+			width: 50%;
+			height: 50%
+			transition: width 3s ease-in-out 2s;
+			border-radius: 50;
+		}
+	</style>
 </head>
 <body>
+	<h1 id="bigtitle">Say Something</h1>
 	<p id="result"></p>
 	<p id="confidence"></p>
+	<div id="coolcircle"></div>
+	<input type="button" value="Enter Voice" onclick='recognizeSpeech'>
+	
 </body>
 </html>
